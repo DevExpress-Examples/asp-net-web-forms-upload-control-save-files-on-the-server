@@ -4,7 +4,7 @@ Imports System.Collections.Generic
 Imports System.Web
 Imports System.Web.UI
 Imports System.Web.UI.WebControls
-Imports DevExpress.Web.ASPxUploadControl
+Imports DevExpress.Web
 
 Partial Public Class _Default
 	Inherits System.Web.UI.Page
@@ -12,7 +12,7 @@ Partial Public Class _Default
 
 	End Sub
 
-	Protected Sub ASPxUploadControl1_FilesUploadComplete(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxUploadControl.FilesUploadCompleteEventArgs)
+	Protected Sub ASPxUploadControl1_FilesUploadComplete(ByVal sender As Object, ByVal e As DevExpress.Web.FilesUploadCompleteEventArgs)
 		' Intentionally pauses server-side processing to demonstrate the Loading Panel or Progress Panel functionality
 		System.Threading.Thread.Sleep(2000)
 

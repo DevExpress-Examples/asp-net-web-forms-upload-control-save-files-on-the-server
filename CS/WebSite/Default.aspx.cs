@@ -7,7 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
-using DevExpress.Web.ASPxUploadControl;
+using DevExpress.Web;
 
 public partial class _Default : System.Web.UI.Page 
 {
@@ -15,7 +15,7 @@ public partial class _Default : System.Web.UI.Page
 
     }
 
-    protected void ASPxUploadControl1_FilesUploadComplete(object sender, DevExpress.Web.ASPxUploadControl.FilesUploadCompleteEventArgs e){
+    protected void ASPxUploadControl1_FilesUploadComplete(object sender, DevExpress.Web.FilesUploadCompleteEventArgs e){
         // Intentionally pauses server-side processing to demonstrate the Loading Panel or Progress Panel functionality
         System.Threading.Thread.Sleep(2000);
 
